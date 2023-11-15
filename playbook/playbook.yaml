@@ -31,8 +31,8 @@
   - name: Add Grafana apt key
     become: yes
     apt_key: 
-      url: https://packages.grafana.com/gpg.key
-      id: 4E40DDF6D76E284A4A6780E48C8C34C524098CB6
+      url: https://apt.grafana.com/gpg.key
+      id: B53AE77BADB630A683046005963FA27710458545
       state: present
       keyring: /usr/share/keyrings/grafana.key
   - name: Add Grafana apt repository
